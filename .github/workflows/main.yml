@@ -20,7 +20,7 @@ jobs:
     
     - name: Copy WAR file to EC2
       run: |
-        scp -o StrictHostKeyChecking=no /MyWebApp ubuntu@18.222.23.203:/home/ubuntu/MyWebApp
+        scp -o StrictHostKeyChecking=no CI-CD_Pipeline/MyWebApp ubuntu@18.222.23.203:/home/ubuntu/MyWebApp
 
     - name: Move WAR file to Jenkins workspace
       run: |
