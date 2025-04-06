@@ -24,7 +24,7 @@ jobs:
 
     - name: Move WAR file to Jenkins workspace
       run: |
-        ssh -o StrictHostKeyChecking=no ubuntu@18.222.23.203 "sudo mv /home/ubuntu/MyWebApp/MyWebApp.war /var/lib/jenkins/workspace/"
+        ssh -o StrictHostKeyChecking=no ubuntu@18.222.23.203 "sudo mv /home/ubuntu/MyWebApp/MyWebApp.war /var/lib/jenkins/workspace/Build_job/Tomcat_Deployment/"
 
     - name: Trigger Jenkins Job to Deploy on Tomcat
       run: |
