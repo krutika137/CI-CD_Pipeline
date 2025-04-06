@@ -28,5 +28,5 @@ jobs:
 
     - name: Trigger Jenkins Job to Deploy on Tomcat
       run: |
-        curl -X POST "http://<JENKINS_HOST>:8080/job/Tomcat_Deployment/build" \
+        curl -X POST "http://<JENKINS_HOST>:8080/job/Build_job/build" \
           --user "admin:${{ secrets.JENKINS_API_TOKEN }}"
